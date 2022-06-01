@@ -6,6 +6,8 @@ const dogSelect = document.getElementById('dog-select');
 const dogDisplay = document.getElementById('dog-display');
 const nameInput = document.getElementById('name-input');
 const nameDisplay = document.getElementById('name-display');
+const themeSelect = document.getElementById('theme-select');
+const dogContainer = document.getElementById('dog-container');
 
 // set event listeners
     // get info from user input
@@ -27,4 +29,17 @@ dogSelect.addEventListener('change', () => {
 nameInput.addEventListener('input', () => {
     const input = nameInput.value;
     nameDisplay.textContent = input ? input : 'Fido';
+});
+
+themeSelect.addEventListener('change', () => {
+    // Remove any theme class currently on element
+    dogContainer.classList.forEach(className => {
+        if (className.endsWith('-theme')) {
+            dogContainer.classList.remove(className);
+        }
+    });
+
+    // Add selected theme
+    const selection = `${themeSelect.value}-theme`;
+    dogContainer.classList.add(selection);
 });
