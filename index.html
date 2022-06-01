@@ -17,6 +17,71 @@
 
     <main>
 
+        <div class="grid-divider">
+        <section id="about-me">
+            <h1>About Me</h1>
+            <p>
+                My name is David. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Now you know everything about me.
+            </p>
+        </section>
+
+        <section id="my-favorite-animal">
+            <h2>My Favorite Animal</h2>
+            <p>
+                Oops, while I was telling you my life story I forgot to say that my favorite animal is a dog.
+                They're fluffy and cute and they just like hanging out. Who doesn't? If you don't have a 
+                dog of your own, here's a cool app to design a virtual dog.
+            </p>
+        </section>
+
+        <section id="tos">
+            <h2>Terms of Service</h2>
+            <p class="small-print">
+                Enim neque volutpat ac tincidunt vitae semper quis lectus. Sagittis purus sit amet volutpat 
+                consequat mauris nunc congue. Massa sapien faucibus et molestie ac feugiat. Auctor augue mauris
+                augue neque. <span class="scary">Your soul belongs to me.</span> Tristique et egestas quis ipsum suspendisse ultrices gravida
+                dictum. Semper eget duis at tellus at urna condimentum mattis pellentesque. In ante metus dictum at
+                tempor commodo ullamcorper.
+            </p>
+            <label>
+                <input id="tos-checkbox" type="checkbox">
+                I agree
+            </label>
+            <button id="reveal-app-button" disabled>Make a dog</button>
+        </section>
+        </div>
+
+        <div class="grid-divider">
+        <section id="animal-designer" class="hidden">
+            <h2>Your Virtual Dog</h2>
+            <div id="animal-container">
+                <img id="dog-display" src="assets/dogs/puppy-dog.jpeg">
+                <p id="name-display">Name</p>
+            </div>
+
+            <h3>Design your dog:</h3>
+            <p>
+                <label>
+                    Select a dog:
+                    <select id="dog-select">
+                        <option value="puppy" selected>Golden Retriever Puppy</option>
+                        <option value="red">Small Red Dog</option>
+                        <option value="serious">Black Lab</option>
+                        <option value="white">Fluffy White Dog</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Name: <input id="name-input" value="Fido">
+                </label>
+            </p>
+        </section>
+        </div>
+
     </main>
 
     <footer>&copy;2021 Aspiring Software Developer</footer>
