@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     --background: rgb(224, 234, 247);
     --header-background: white;
@@ -7,7 +6,7 @@
 }
 
 body {
-    font-family: 'Hubballi', cursive;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--background);
     padding-bottom: 30px;
 }
@@ -27,4 +26,43 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+@media (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 20px;
+    }
+}
+
+section {
+    max-width: 450px;
+}
+
+.hidden {
+    display: none;
+}
+
+.small-print {
+    font-size: x-small;
+}
+
+.scary {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#animal-container {
+    background-color: olivedrab;
+    width: 400px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px dashed black
+}
+
+#dog-display {
+    width: 100%;
 }
