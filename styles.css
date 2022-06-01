@@ -54,13 +54,36 @@ section {
     font-size: 1.1em;
 }
 
+#name-display {
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+
 #dog-container {
-    background-color: olivedrab;
+    box-sizing: border-box;
     width: 400px;
     text-align: center;
     padding: 15px;
+}
+
+.green-theme {
+    font-family: cursive;
+    background-color: olivedrab;
+    border: 5px dashed black;
+    border-radius: 15px;
+}
+
+.blue-theme {
+    font-family: cursive;
+    background-color: steelblue;
+    border: 10px ridge rgba(40, 40, 180, .6);
     border-radius: 5px;
-    border: 2px dashed black
+}
+
+.flat-theme {
+    background-color: rgb(214, 201, 166);
+    border: 2px solid black;
 }
 
 #dog-display {
