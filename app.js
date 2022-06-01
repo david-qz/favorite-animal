@@ -4,6 +4,8 @@ const startButton = document.getElementById('start-button');
 const dogDesigner = document.getElementById('dog-designer');
 const dogSelect = document.getElementById('dog-select');
 const dogDisplay = document.getElementById('dog-display');
+const nameInput = document.getElementById('name-input');
+const nameDisplay = document.getElementById('name-display');
 
 // set event listeners
     // get info from user input
@@ -18,6 +20,11 @@ startButton.addEventListener('click', () => {
 });
 
 dogSelect.addEventListener('change', () => {
-    let selection = `assets/dogs/${dogSelect.value}-dog.jpg`;
+    const selection = `assets/dogs/${dogSelect.value}-dog.jpg`;
     dogDisplay.src = selection;
+});
+
+nameInput.addEventListener('input', () => {
+    const input = nameInput.value;
+    nameDisplay.textContent = input ? input : 'Fido';
 });
