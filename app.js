@@ -18,6 +18,8 @@ tosCheckbox.addEventListener('change', () => {
 });
 
 startButton.addEventListener('click', () => {
+    tosCheckbox.disabled = true;
+    startButton.classList.add('hidden');
     dogDesigner.classList.remove('hidden');
 });
 
